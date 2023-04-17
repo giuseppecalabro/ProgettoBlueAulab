@@ -1,0 +1,475 @@
+/* SET-UP */
+:root{
+    --blue: #1566C0;
+    --white: white;
+    --yellow: rgb(255, 187, 0);
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3, .h1, .h2, .h3{
+    font-family: 'Righteous', cursive;
+}
+
+.txt-white{
+    color: var(--white);
+}
+.txt-blue{
+    color: var(--blue);
+}
+.txt-red{
+    color: red;
+}
+.txt-green{
+    color: green;
+}
+.txt-grey{
+    color: grey;
+}
+.txt.black{
+    color: black;
+}
+.txt-yellow{
+    color: var(--yellow);
+}
+
+/* Tasto torna su */
+.torna{
+    width:90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color:#1565c0b9 ;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 25px;
+    transition-duration: 0.5s;
+    font-family: 'Righteous', cursive;
+}
+@media screen and (max-width:576px){
+    .torna{
+        width: 60px;
+        height: 60px;
+        font-size: 15px;
+        right: 5px;
+        bottom: 80px;
+    }
+}
+/* Header */
+.bg-header{
+    background-image:linear-gradient(180deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.336)) , url(./media/header.jpg);
+    height: 98vh;
+    background-position: bottom;
+}
+
+.btn-custom{
+    padding: 10px 40px;
+    background-color: var(--yellow);
+    border: 2px soldi transparent;
+    transition-duration: 0.8s;
+}
+
+.wave1{
+    padding: 0px;
+    position: relative;
+}
+
+.wave2{
+    padding: 0px;
+    position: absolute;
+    top: 500px;
+}
+
+@media screen and (max-width:576px) {
+    .bg-header{
+        height: 88vh;
+    }
+    .wave1{
+        position: relative;
+        top: 10px;
+    }
+    .wave2{
+        position: absolute;
+        top: 504px;
+    }
+}
+
+/* Cards Sea */
+.card1{
+    background-image:linear-gradient(180deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.253), rgb(0, 0, 0)), url(./media/1.png);
+    background-size: cover;
+    height: 45vh;
+    width: 22%;
+    transition-duration: 0.8s;
+}
+
+.card2{
+    background-image:linear-gradient(180deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.253), rgb(0, 0, 0)), url(./media/2.png);
+    background-size: cover;
+    height: 45vh;
+    width: 22%;
+    transition-duration: 0.8s;
+}
+
+.card3{
+    background-image:linear-gradient(180deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.253), rgb(0, 0, 0)), url(./media/3.png);
+    background-size: cover;
+    height: 45vh;
+    width: 22%;
+    transition-duration: 0.8s;
+}
+
+.card4{
+    background-image:linear-gradient(180deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.253), rgb(0, 0, 0)), url(./media/4.png);
+    background-size: cover;
+    height: 45vh;
+    width: 22%;
+    transition-duration: 0.8s;
+}
+
+
+.mt-card{
+    margin-top: 90px;
+}
+
+.hr-yellow{
+    border-bottom: 3px solid var(--yellow) ;
+}
+
+.mt-p-card{
+    margin-top: 100px;
+}
+
+@media screen and (max-width:576px) {
+    .card1, .card2, .card3, .card4{
+        width: 90%;
+    }
+    .mt-card{
+        margin-top: 30px;
+    }
+    .mt-p-card{
+        margin-top: 50px;
+    }
+}
+
+/* spiegazione + bottoni */
+.mt-custom{
+    margin-top: 150px;
+}
+
+.b-custom{
+    border-radius: 20px 20px 20px 20px;
+}
+
+.btn-elementsFire{
+    color: red;
+    padding: 25px 25px;
+    background-color: transparent;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 5px 30px 1px rgba(0, 0, 0, 0.3);
+    border-color: transparent;
+    transition-duration: 0.5s;
+}
+
+.btn-elementsGreen{
+    color: Green;
+    padding: 25px 25px;
+    background-color: transparent;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 5px 30px 1px rgba(0, 0, 0, 0.3);
+    border-color: transparent;
+    transition-duration: 0.5s;
+}
+
+.btn-elementsYellow{
+    color: var(--yellow);
+    padding: 25px 25px;
+    background-color: transparent;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 5px 30px 1px rgba(0, 0, 0, 0.3);
+    border-color: transparent;
+    transition-duration: 0.5s;
+}
+
+
+
+.btn-elementsBlue{
+    color: var(--blue);
+    padding: 25px 20px;
+    background-color: transparent;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 5px 30px 1px rgba(0, 0, 0, 0.3);
+    border-color: transparent;
+    transition-duration: 0.5s;
+    
+}
+
+.btn-elementsGrey{
+    color: grey;
+    padding:  25px 25px;
+    background-color: transparent;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 5px 30px 1px rgba(0, 0, 0, 0.3);
+    border-color: transparent;
+    transition-duration: 0.5s;
+    
+}
+
+.btn-elementsBlack{
+    color: black;
+    padding: 25px 25px;
+    background-color: transparent;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 5px 30px 1px rgba(0, 0, 0, 0.3);
+    border-color: transparent;
+    transition-duration: 0.5s;
+    
+}
+
+.card5{
+    width: 45%;
+    min-height: 22vh;
+    border-radius: 20px 20px 20px 20px;
+
+}
+
+/* other Cards */
+.card6{
+    width: 55%;
+    height: 19vh;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.card7{
+    margin-left: 150px;
+    width: 30%;
+    height: 20vh;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.card8{
+    width: 25%;
+    height: 17vh;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.card9{
+    width: 25%;
+    height: 20vh;
+    border-radius: 20px 20px 20px 20px;
+    margin-left: 600px;
+}
+
+.card10{
+    width: 25%;
+    height: 17vh;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.card11{
+    margin-left: 500px;
+    width: 25%;
+    height: 20vh;
+    border-radius: 20px 20px 20px 20px;
+}
+.card12{
+    width: 20%;
+    height: 25vh;
+    border-radius: 20px 20px 20px 20px;
+}
+
+@media screen and (max-width:576px) {
+    .card7{
+        margin-left: 0px;
+        width: 65%;
+        height: 26vh;
+    }
+    .card8{
+        height: 23vh;
+    }
+    .card9{
+        margin-left: 0px;
+    }
+    .card9{
+        width: 50%;
+        height: 30vh;
+    }
+    .card10{
+        width: 50%;
+        height: 22vh;
+    }
+    .card11{
+        margin-left: 0px;
+        width: 50%;
+        min-height: 30vh;
+    }
+    .card12{
+        width: 50%;
+        height: 45vh;
+    }
+}
+
+/* immagine+test */
+.border-custom{
+    border-radius: 20px 20px 20px 20px;
+}
+.no-border{
+    border: transparent;
+    background-color: transparent;
+}
+.img-round{
+    width: 45%;
+    border-radius: 50%;
+    padding: 8px;
+    border: 4px solid var(--blue) ;
+    transition-duration: 0.7s;
+}
+
+/* Timeline */
+
+.lineL{
+    border-right: 2px solid var(--blue);
+}
+
+.lineR{
+    border-left: 2px solid var(--blue);
+}
+
+.pallinoR{
+    position: relative;
+}
+
+.pallinoL{
+    position: relative;
+}
+
+
+.pallinoR::after{
+    content: '';
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--white);
+    border: 2px solid var(--blue);
+    position: absolute;
+    left: 628px;
+
+}
+
+.pallinoL::before{
+    content: '';
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--white);
+    border: 2px solid var(--blue);
+    position: absolute;
+    right: 628px;
+}
+
+.mb-custom{
+    margin-bottom: 100px;
+}
+
+.btn-sub{
+    border-color:transparent;
+    background-color: var(--blue);
+    padding: 7px 40px;
+    transition-duration: 0.8s;
+}
+
+@media screen and (max-width:576px) {
+    .pallinoR::after{
+        position: absolute;
+        left: 155.5px;
+    }
+    .pallinoL::before{
+        position: absolute;
+        left: -33.5px;
+    }
+}
+
+/* Footer */
+.bg-footer{
+    height: 80vh;
+    background-image:linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0, 0, 0, 0.308) 50%, rgba(0,0,0,1) 100%),url(./media/footer.jpg);
+    background-position: top;
+    background-size: 100%;
+}
+
+/* ANIMAZIONI */
+
+.btn-custom:hover{
+    background-color: var(--white);
+    border: 2px solid var(--yellow);
+    transform: scale(1.2);
+}
+
+.card1:hover, .card2:hover, .card3:hover, .card4:hover{
+    transform: scale(1.2);
+}
+
+.btn-elementsFire:hover{
+    color: var(--white);
+    background-color: red;
+    transform: scale(1.1);
+}
+.btn-elementsGreen:hover{
+    color: var(--white);
+    background-color: green;
+    transform: scale(1.1);
+}
+.btn-elementsYellow:hover{
+    color: var(--white);
+    background-color: var(--yellow);
+    transform: scale(1.1);
+}
+
+.btn-elementsBlue:hover{
+    color: var(--white);
+    background-color: var(--blue);
+    transform: scale(1.1);
+}
+
+.btn-elementsGrey:hover{
+    color: var(--white);
+    background-color: grey;
+    transform: scale(1.1);
+}
+
+.btn-elementsBlack:hover{
+    color: var(--white);
+    background-color: black;
+    transform: scale(1.1);
+}
+.btn-sub:hover{
+    background-color: var(--white);
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    transform: scale(1.4);
+}
+
+.socials{
+    transition-duration: 0.5s;
+}
+.socials:hover{
+    color: var(--yellow);
+    transform: scale(1.4);
+}
+
+.img-round:hover{
+    transform: scale(1.2);
+}
+
+.torna:hover{
+    text-decoration: none;
+    color: var(--white);
+    transform: scale(1.2);
+}
